@@ -63,9 +63,9 @@ module "alb" {
 }
 
 # S3
-module "s3" {
-  source       = "./s3"
-  service_type = var.service_type
-  vpc_id       = module.vpc.vpc_id
-  bucket       = "saju-front-${var.service_type}"
-}
+#module "s3" {
+#  source       = "./s3"
+#  service_type = var.service_type
+#  vpc_id       = module.vpc.vpc_id
+#  bucket       = "saju-front-${var.service_type}"
+#}
