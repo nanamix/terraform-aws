@@ -109,7 +109,7 @@ resource "aws_lb_target_group" "tg" {
 # 대상 등록
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group_attachment
 resource "aws_lb_target_group_attachment" "attachment" {
-  count = 1
+  count = length(data.aws_instances.tag.ids)
   target_group_arn = aws_lb_target_group.tg.arn
   target_id = element(data.aws_instances.tag.ids, count.index)
   port             = 3000 //선택한 인스턴스를 위한 포트
