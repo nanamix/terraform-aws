@@ -14,9 +14,9 @@ output "alb_dns_name" {
 }
 
 # S3 정적 웹 호스팅 엔드포인트
-output "s3_endpoint" {
-  value = module.s3.s3_endpoint
-}
+#output "s3_endpoint" {
+#  value = module.s3.s3_endpoint
+#}
 
 # RDS 엔드포인트
 output "rds_endpoint" {
