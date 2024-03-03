@@ -13,9 +13,9 @@ output "rds_endpoint" {
 
 
 # S3 정적 웹 호스팅 엔드포인트
-output "s3_endpoint" {
-  value = module.s3.s3_endpoint
-}
+#output "s3_endpoint" {
+#  value = module.s3.s3_endpoint
+#}
 
 
 # 로드밸런서 주소
