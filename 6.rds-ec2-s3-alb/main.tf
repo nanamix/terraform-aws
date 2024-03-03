@@ -38,12 +38,12 @@ module "rds" {
 }
 
 # S3
-module "s3" {
-  source       = "./s3"
-  service_type = var.service_type
-  vpc_id       = var.vpc_id
-  bucket       = "saju-front-${var.service_type}"
-}
+#module "s3" {
+#  source       = "./s3"
+#  service_type = var.service_type
+#  vpc_id       = var.vpc_id
+#  bucket       = "saju-front-${var.service_type}"
+#}
 
 # ALB
 # default vpc 서브넷 : ["subnet-3ae29a52", "subnet-a29b35ee"] 
